@@ -1,4 +1,4 @@
-import {plot} from "./src/plot.js";
+import {barplot} from "./src/plot.js";
 
 // Get reference to the plot UI element
 const plotDiv = document.getElementById("plot");
@@ -25,7 +25,7 @@ fileInput.onchange = () => {
 /**
  * Function for processing data in Python (pyodide)
  * Needs to be asyncronous to use "await"
- * @param {*} data
+ * @param {number[]} data Data to plot
  */
 async function processData(data) {
     // Setup pyodide
@@ -35,7 +35,6 @@ async function processData(data) {
     await pyodide.loadPackage("micropip");
     const micropip = pyodide.pyimport("micropip");
     await micropip.install('numpy');
-
 
     // Set data variables in python global scope
     const xs = data.map(v=>v[0]);
@@ -60,7 +59,7 @@ async function processData(data) {
     }));
 
     // Plot output data with vega-lite
-    plot(outputData);
+    barplot(outputData);
 
     // Remove loading indicator
     plotDiv.ariaBusy = "false";

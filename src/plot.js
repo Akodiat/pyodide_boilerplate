@@ -1,4 +1,4 @@
-function plot(data) {
+function barplot(data) {
     // Assign the specification to a local variable vlSpec.
     const vlSpec = {
         $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
@@ -27,4 +27,4 @@ function plot(data) {
     vegaEmbed('#plot', vlSpec);
 }
 
-export {plot}
+export {barplot}
