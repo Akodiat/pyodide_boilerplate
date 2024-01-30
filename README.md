@@ -4,7 +4,7 @@
 
 Simple boilerplate / demo for using pyodide and vega-lite plotting (and a simple GUI).
 
-This is all a static website and you can try it out now at [akodiat.github.io/pyodide_boilerplate](akodiat.github.io/pyodide_boilerplate).
+This is all a static website and you can try it out now at [akodiat.github.io/pyodide_boilerplate](https://akodiat.github.io/pyodide_boilerplate/).
 
 The app takes a csv file with two columns as input, sums the column values for each row (using numpy), then plots the sums as a bar plot. You may use the `data.csv` file in the repository as input.
 
