@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+        <!-- Make things look better -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+        <!-- Use light theme -->
+        <html data-theme="light"></html>
+
+        <!-- Enable python -->
+        <script src="https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js"></script>
+
+        <!-- Enable plotting with vega-lite -->
+        <script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.16.3"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.22.2"></script>
+
+        <!-- Simplify CSV parsing -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+        <article>
+            <h1>Pyodide boilerplate</h1>
+
+            <label for="fileInput">Upload data here:
+                <input type="file" id="fileInput" accept=".csv"/>
+            </label>
+
+            <div id="plot" style="width: 100%; display: flex;"></div>
+        </article>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+
+</html>
