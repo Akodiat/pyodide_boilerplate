@@ -15,4 +15,4 @@ To run it locally, you need to start a http static server in this directory. You
 python -m http.server 8000
 ```
 
-Then, go to [localhost:8000](localhost:8000) (or whatever port you used above) to view the app.
+Then, go to [localhost:8000](HTTP:/localhost:8000) (or whatever port you used above) to view the app.
