@@ -44,10 +44,15 @@ Storing and referencing the library files locally (in, say, a ./lib directory) s
 ### Papaparse
 [Papaparse](https://www.papaparse.com/) is a JavaScript library that makes it easier to parse CSV files: https://www.papaparse.com/. If you want to parse a text file manually, you can instead do:
 ```js
+// Get a reference to the file input HTML element
 const fileInput = document.getElementById("fileInput");
+
+// Specify what happens when the input is changed
+// i.e. a file is uploaded
 fileInput.onchange = () => {
   fileInput.files[0].text().then(text => {
     // Do what you want here
+    // For now, let's print it to the web console
     console.log(text);
   })
 };
