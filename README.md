@@ -26,11 +26,14 @@ As seen in `index.html`, the app uses a set of JavaScript libraries loaded troug
 
 Storing and referencing the library files locally (in, say, a ./lib directory) should work just as well.
 
-### Pico.css
-[Pico.css](https://picocss.com/) is a simple way to make an HTML file look better. Try removing the stylesheet to see the difference. They have a list of UI elements and components here: https://picocss.com/docs.
-
 ### Pyodide
 [Pyodide](https://pyodide.org/) is a Python distribution that can run in the browser (through WebAssembly), allowing you to call Python code from JavaScript. The main bottleneck in this app is the time it takes to load the pyodide runtime, so in practice you should probably have some more demanding code to run to make it worth the trouble. If you have a large Python package, it is best to build it as a wheel: https://pyodide.org/en/stable/usage/loading-custom-python-code.htm
+
+### Vega-Lite
+[Vega-Lite](https://vega.github.io/vega-lite/) is a high-level visualisation and plotting library based on the lower-level visualisation grammar [Vega](https://vega.github.io/vega/). See also the Vega-Lite example gallery: https://vega.github.io/vega-lite/examples/.
+
+### Pico.css
+[Pico.css](https://picocss.com/) is a simple way to make an HTML file look better. Try removing the stylesheet to see the difference. They have a list of UI elements and components here: https://picocss.com/docs.
 
 ### Papaparse
 [Papaparse](https://www.papaparse.com/) is a JavaScript library that makes it easier to parse CSV files: https://www.papaparse.com/. If you want to parse a text file manually, you can instead do:
